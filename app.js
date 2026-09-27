@@ -9,7 +9,7 @@ function sSet(k, v) { if (_store) try { _store.setItem(k, v); } catch(e) {} _mem
 function sRemove(k) { if (_store) try { _store.removeItem(k); } catch(e) {} delete _mem[k]; }
 function getJSON(k) { try { var v = sGet(k); return v ? JSON.parse(v) : null; } catch(e) { return null; } }
 function setJSON(k, v) { try { sSet(k, JSON.stringify(v)); return true; } catch(e) { return false; } }
-var API_URL = 'https://event.glent7498.workers.dev';
+var API_URL = 'https://event4.ywiytrp.workers.dev';
 var FALLBACK_AVATAR = 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg';
 var API_TIMEOUT = 10000;
 var MAX_RETRIES = 3;
